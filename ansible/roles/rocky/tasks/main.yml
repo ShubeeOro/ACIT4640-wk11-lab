@@ -1,0 +1,8 @@
+#SPDX-License-Identifier: MIT-0
+---
+# tasks file for rocky
+- name: Install redis on Rocky Linux
+  ansible.builtin.dnf:
+    name: redis
+    state: present
+
