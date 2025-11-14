@@ -22,3 +22,5 @@
     src: /etc/nginx/sites-available/default
     dest: /etc/nginx/sites-enabled/default
     state: link
+  notify:
+    - restart nginx
